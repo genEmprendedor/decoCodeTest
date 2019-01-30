@@ -8,7 +8,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'UA-132542390-1');
   </script>
 
@@ -62,28 +61,17 @@
       <!--end nav items-->
     </nav>
 
-    <!--image slider-->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <!--carousel inner-->
-      <div class="carousel-inner" role="listbox">
-        <!--slide 1-->
-        <div class="carousel-item active" style="background-image: url(img/slide_1.jpg);">
-          <div class="carousel-caption text-center">
+    <!--Main Hero-->
+    <div class="top-hero">
+    <div class="top-hero-image">
+          <div class="top-hero-text">
             <h1>Welcome to Decolicious</h1>
             <h3>Your work. Your Future. In Style</h3>
             <a href="#contact" class="btn btn-outline-light btn-lg">LEASING INQUIRIES</a>
           </div>
         </div>
-
-      </div>
-      <!--end image slider-->
     </div>
-    <!--end home section-->
+    <!--end Main Hero-->
 
     <!--leasing section-->
     <section class="offset" id="lease">
@@ -338,11 +326,9 @@
           position: decolicious,
           map: map
         });
-
         var infoWindow = new google.maps.InfoWindow({
           content: '<h4><a href="https://www.google.com/maps/dir//11051+97+St+NW,+Edmonton,+AB+T5H+2N2/@53.5513534,-113.5203122,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x53a023ac68edf363:0x9767bcafdae1cd36!2m2!1d-113.4915558!2d53.5586695" target="_blank">Directions</a></h4>'
         });
-
         marker.addListener('click', function () {
           infoWindow.open(map, marker);
         });
