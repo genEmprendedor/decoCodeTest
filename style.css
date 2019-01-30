@@ -50,33 +50,39 @@ logo {
   color: #d4af37;
 }
 
-/* slider*/
-/* .carousel-item {
-  height: 100vh;
-  background-size: cover;
-} */
-.carousel-item {
+/* Main Hero */
+.top-hero {
   height: 100vh;
   min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   margin-bottom: 2rem;
 }
-.carousel-caption {
-  position: absolute;
-  top: 38%;
-  text-transform: uppercase;
-}
-.carousel-caption h1 {
+
+.top-hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/slide_1.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+.top-hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+.top-hero-text h1 {
   font-size: 3.8rem;
   font-weight: 700;
   text-shadow: 0.1rem 0.1rem 0.8rem black;
   padding-bottom: 1rem;
+  color: #d4af37;
 }
-.carousel-caption h3 {
+.top-hero-text h3 {
   font-size: 2rem;
   font-weight: 700;
   text-shadow: 0.1rem 0.1rem 0.5rem black;
