@@ -330,7 +330,7 @@ main{
     background-image: url("img/lease1_large.jpg");
     background-color: #cccccc;
     height: 100vh;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
