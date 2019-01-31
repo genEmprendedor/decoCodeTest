@@ -76,11 +76,11 @@ logo {
         }
 
 .top-hero-text h1 {
-  font-size: 3.8rem;
-  font-weight: 700;
+  font-size: 3.9rem;
+  font-weight: bold;
   text-shadow: 0.1rem 0.1rem 0.8rem black;
   padding-bottom: 1rem;
-  color: #d4af37;
+  font-family: "Poiret One", cursive;
 }
 .top-hero-text h3 {
   font-size: 2rem;
@@ -274,12 +274,12 @@ main{
 
 
 /* Media queries */
-@media (max-width: 767px) {
-  .carousel-caption h1 {
-    font-size: 2.3rem;
+@media (max-width: 768px) {
+  .top-hero-text h1 {
+    font-size: 3rem;
     padding-bottom: 0.5rem;
   }
-  .carousel-caption h3 {
+  .top-hero-text h3 {
     font-size: 1.2rem;
     padding-bottom: 1.2rem;
     color: aquamarine;
