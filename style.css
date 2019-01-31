@@ -100,7 +100,7 @@ logo {
   margin-bottom: 3.25rem;
 }
 .hero-image {
-  background-image: url(img/lease1.jpg);
+  background-image: url("img/lease1.jpg");
   background-color: #cccccc;
   height: 500px;
   background-position: center;
@@ -327,7 +327,7 @@ main{
   }
 
   .hero-image {
-    background-image: url(img/lease1_large.jpg);
+    background-image: url("img/lease1_large.jpg");
     background-color: #cccccc;
     height: 500px;
     background-position: center;
