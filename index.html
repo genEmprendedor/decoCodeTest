@@ -22,6 +22,10 @@
   <!--Font Awsome-->
   <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
     crossorigin="anonymous"></script>
+  
+  <!-- Lightbox CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" crossorigin="anonymous" />
+  <!-- end lightbox -->
 
   <title>Decolicious – Edmonton Office Space for Lease</title>
   <link rel="icon" type="image/ico" href="favicon.ico" />
@@ -162,43 +166,43 @@
         <div class="row no-padding">
           <div class="col-sm-4">
             <div class="portfolio">
-              <a href="img/portfolio/1.jpg" target="_blank">
-                <img src="img/portfolio/1.jpg" alt="indoor door in corner" /></a>
+              <a href="https://unsplash.it/1200/768.jpg?image=250" data-toggle="lightbox" data-max-width="600">
+                <img src="https://unsplash.it/600.jpg?image=250" class="img-fluid" alt="indoor door in corner" /></a>
             </div>
           </div>
 
           <div class="col-sm-4">
             <div class="portfolio">
-              <a href="img/portfolio/2.jpg" target="_blank">
-                <img src="img/portfolio/2.jpg" alt="multicolor hallway view" /></a>
+              <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-max-width="600" >
+                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid" alt="indoor door in corner">
             </div>
           </div>
 
           <div class="col-sm-4">
             <div class="portfolio">
-              <a href="img/portfolio/3.jpg" target="_blank">
-                <img src="img/portfolio/3.jpg" alt="view from rooftop patio" /></a>
+              <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-max-width="600" >
+                <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid" alt="view from rooftop patio" /></a>
             </div>
           </div>
 
           <div class="col-sm-4">
             <div class="portfolio">
-              <a href="img/portfolio/4.jpg" target="_blank">
-                <img src="img/portfolio/4.jpg" alt="indoor door" /></a>
+              <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-max-width="600" >
+                <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid" alt="indoor door" /></a>
             </div>
           </div>
 
           <div class="col-sm-4">
             <div class="portfolio">
-              <a href="img/portfolio/5.jpg" target="_blank">
-                <img src="img/portfolio/5.jpg" alt="outdoor front view" /></a>
+              <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-max-width="600" >
+                <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid" alt="outdoor front view" /></a>
             </div>
           </div>
 
           <div class="col-sm-4">
             <div class="portfolio">
-              <a href="img/portfolio/6.jpg" target="_blank">
-                <img src="img/portfolio/6.jpg" alt="indoor second floor view" /></a>
+               <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-max-width="600" >
+                <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid" alt="indoor second floor view" /></a>
             </div>
           </div>
 
@@ -233,12 +237,8 @@
           <div class="col-md-1"></div>
           <div class="col-md-10">
             <div class="card text-center">
-              <picture>
-                <source srcset="img/location/2.jpeg" media="(max-width: 768px)">
-                <source srcset="img/location/2.jpeg" media="(min-width: 769px)">
-                <img src="img/location/2.jpeg" alt="A sign that reads This Must Be The Place" style="width:auto;">
-              </picture>
-
+              <img src="https://images.pexels.com/photos/942317/pexels-photo-942317.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="A sign that reads This Must Be The Place" class="responsive">
+              
               <div class="card-body">
                 <div id="pexels">
                   <p>Photo by <a href="https://www.pexels.com/@timmossholder" target="_blank">Tim Mossholder</a>.</p>
@@ -315,6 +315,18 @@
       crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"></script>
+      
+      <!-- BS Lightbox JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+      crossorigin="anonymous"></script>
+      
+      <script>
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+    </script>
+      <!-- end of Lightbox JS -->
 
     <script>
       // Initialize and add the map
