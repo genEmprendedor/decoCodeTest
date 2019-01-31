@@ -52,13 +52,13 @@ logo {
 
 /* Main Hero */
 .top-hero {
-  height: 100vh;
+  height: 75vh;
   min-height: 300px;
   margin-bottom: 2rem;
 }
 
 .top-hero-image {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/slide_1.jpg");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/963486/pexels-photo-963486.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
             height: 100%;
             background-position: center;
             background-repeat: no-repeat;
@@ -100,9 +100,9 @@ logo {
   margin-bottom: 3.25rem;
 }
 .hero-image {
-  background-image: url("img/lease1.jpg");
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/4/4e/Shaws-art-deco.jpg");
   background-color: #cccccc;
-  height: 500px;
+  height: 500px; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -147,17 +147,21 @@ h3.heading {
   background-color: #d4af37;
   margin: 0 auto 2rem;
 }
+
+
 .portfolio img {
   max-width: 100%;
   transition: transform 0.5s ease;
-}
+} 
 .portfolio img:hover {
   transform: scale(1.1);
   cursor: zoom-in;
 }
+
 .portfolio {
   overflow: hidden;
 }
+
 #portfolio {
   margin-bottom: 1.75rem;
 }
@@ -166,9 +170,17 @@ h3.heading {
   padding: 0;
 }
 
+
 #photosby {
   text-align: center;
   font-size: 0.75rem;
+}
+
+/* Location and card  */
+.card .responsive {
+  width: 100%;
+  max-width: 768px;
+  height: auto;
 }
 #location {
   padding-top: 2rem;
@@ -273,8 +285,9 @@ main{
 
 
 
-/* Media queries */
+/* Media queries */ /*
 @media (max-width: 768px) {
+   
   .top-hero-text h1 {
     font-size: 3rem;
     padding-bottom: 0.5rem;
@@ -313,12 +326,21 @@ main{
   #informacion {
     margin-top: -1.5rem;
   }
+  .card .responsive {
+  width: 100%;
+  max-width: 768px;
+  height: auto;
 }
+  .hero-image {
+    background-position: right;
+    
+  }
+} */
 
 @media (min-width: 769px) {
   .top-hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("img/slide_1_large.jpg");
+    url("https://upload.wikimedia.org/wikipedia/commons/0/0d/Art_Deco_awning_in_Prague_pic3.JPG");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -327,8 +349,9 @@ main{
   }
 
   .hero-image {
-    background-image: url("img/lease1_large.jpg");
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/98/Art_Deco_Ice_Cream_Parlor_%289333014479%29.jpg");
     background-color: #cccccc;
+    /*height: 500px; */
     height: 100vh;
     background-position: right;
     background-repeat: no-repeat;
@@ -336,4 +359,9 @@ main{
     position: relative;
   }
   
+  .card .responsive {
+    height: auto;
+    max-width: 100%;
+    
+  }
 }
