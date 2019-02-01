@@ -95,6 +95,10 @@ logo {
   border-radius: 0;
   font-size: 1.1rem;
 }
+/* General Information top */
+.container p {
+  margin-left: 1rem;
+}
 
 /*Leasing*/
 #lease {
@@ -117,15 +121,15 @@ logo {
   transform: translate(-50%, -50%);
   color: white;
   text-shadow: 0.1rem 0.1rem 0.8rem black;
-  margin-left: 2rem;
+  margin-left: .75rem;
   text-transform: uppercase;
 }
 .leaseInfo {
   margin-top: 2rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 .leaseSubtitulo {
-  margin-left: 1.6rem;
+  margin-left: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -283,8 +287,6 @@ main{
 .hero img{
   width: 100%;
 }
-
-
 
 /* Media queries */ /*
 @media (max-width: 768px) {
