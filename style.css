@@ -58,7 +58,7 @@ logo {
 }
 
 .top-hero-image {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/963486/pexels-photo-963486.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/slide-1.jpg");
             height: 100%;
             background-position: center;
             background-repeat: no-repeat;
@@ -105,7 +105,7 @@ logo {
   margin-bottom: 3.25rem;
 }
 .hero-image {
-  background-image: url("https://upload.wikimedia.org/wikipedia/en/4/4e/Shaws-art-deco.jpg");
+  background-image: url("img/lease-1.jpg");
   background-color: #cccccc;
   height: 500px; 
   background-position: center;
@@ -119,7 +119,7 @@ logo {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: blanchedalmond;
   text-shadow: 0.1rem 0.1rem 0.8rem black;
   margin-left: .75rem;
   text-transform: uppercase;
@@ -288,62 +288,11 @@ main{
   width: 100%;
 }
 
-/* Media queries */ /*
-@media (max-width: 768px) {
-   
-  .top-hero-text h1 {
-    font-size: 3rem;
-    padding-bottom: 0.5rem;
-  }
-  .top-hero-text h3 {
-    font-size: 1.2rem;
-    padding-bottom: 1.2rem;
-    color: aquamarine;
-  }
-  .btn-lg {
-    font-size: 1rem;
-  }
-  #titulo {
-    font-size: 1.75rem;
-  }
-  #subheader {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-  #portafolio {
-    margin-bottom: -0.5rem;
-  }
-  #locacion {
-    margin-bottom: -0.5rem;
-  }
-  .card-body p {
-    text-align: left;
-  }
-  .hero-text {
-    color: #d4af37;
-  }
-  .leaseInfo {
-    margin-left: 0;
-    margin-bottom: 3.5rem;
-  }
-  #informacion {
-    margin-top: -1.5rem;
-  }
-  .card .responsive {
-  width: 100%;
-  max-width: 768px;
-  height: auto;
-}
-  .hero-image {
-    background-position: right;
-    
-  }
-} */
 
 @media (min-width: 769px) {
   .top-hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://upload.wikimedia.org/wikipedia/commons/0/0d/Art_Deco_awning_in_Prague_pic3.JPG");
+    url("img/slide-1-large.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -353,9 +302,8 @@ main{
 
   /* Leasing hero */
   .hero-image {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/98/Art_Deco_Ice_Cream_Parlor_%289333014479%29.jpg");
+    background-image: url("img/lease-large.jpg");
     background-color: #cccccc;
-    /*height: 500px; */
     height: 100vh;
     background-position: right;
     background-repeat: no-repeat;
@@ -371,7 +319,9 @@ main{
 /* Portfolio */
   .portfolio img {
     max-width: 100%;
-    
   }
   
+  /* Location */
+  
+
 }
