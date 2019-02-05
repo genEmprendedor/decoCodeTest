@@ -16,12 +16,11 @@ body {
   display: block;
 }
 
-logo {
+/*logo {
   font-family: "Poiret One", cursive;
-  /*font-family: 'Josefin Sans', sans-serif;*/
   text-shadow: 4px 4px 4px #aaa;
   color: #d4af37;
-} 
+} */
 
 #logo {
   font-family: "Josefin Sans", sans-serif;
