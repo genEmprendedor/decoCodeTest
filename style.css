@@ -1,5 +1,5 @@
 /* @import url("https://fonts.googleapis.com/css?family=Lato:400,700"); */
-@import url("https://fonts.googleapis.com/css?family=Poiret+One");
+/* @import url("https://fonts.googleapis.com/css?family=Poiret+One"); */
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700");
 
 body {
@@ -15,12 +15,12 @@ body {
   display: block;
 }
 
-logo {
+/* logo {
   font-family: "Poiret One", cursive;
   /*font-family: 'Josefin Sans', sans-serif;*/
   text-shadow: 4px 4px 4px #aaa;
   color: #d4af37;
-}
+} */
 
 #logo {
   font-family: "Josefin Sans", sans-serif;
