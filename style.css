@@ -58,7 +58,7 @@ body {
 }
 
 .top-hero-image {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549560121/slide-1-large.jpg");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dsu4vqygh/image/upload/c_scale,f_auto,q_auto,w_500/v1549560121/slide-1-large.jpg");
             height: 100%;
             background-position: center;
             background-repeat: no-repeat;
@@ -105,7 +105,7 @@ body {
   margin-bottom: 3.25rem;
 }
 .hero-image {
-  background-image: url("https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549560121/lease-large.jpg");
+  background-image: url("https://res.cloudinary.com/dsu4vqygh/image/upload/c_scale,f_auto,q_auto,w_500/v1549560121/lease-large.jpg");
   background-color: #cccccc;
   height: 500px; 
   background-position: center;
