@@ -13,7 +13,10 @@
 
   <!-- Required meta tags -->
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <link rel="stylesheet" href="style.css" />
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
@@ -30,9 +33,10 @@
 
   <title>Decolicious – Edmonton Office Space for Lease</title>
   <link rel="icon" type="image/ico" href="favicon.ico" />
+  <link rel="canonical" href="https://decolicious.ca" />
 
   <meta name="description" content="At almost 3,000 Sq.Ft of lease space, Decolicious is the largest modern Art Deco building minutes away from the downtown core… part of what makes Decolicious the best office address in Edmonton.">
-
+  <meta name="keywords" content="Edmonton office lease, Art Deco office space, Edmonton Downtown office rent, Artistic Office space"> 
 
 </head>
 
@@ -42,7 +46,7 @@
     <!--navigation-->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <a href="index.html" class="navbar-brand" id="logo">Decolicious</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <button aria-label="Logo of Decolicious" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -149,7 +153,7 @@
           <li><strong>PARKING:</strong> 4 covered stalls with plug-ins – $65/mo; 6 additional surface – $50/mo</li>
           <li><strong>OP.COSTS:</strong> $5.25 (est. for 2018); ALL INCLUSIVE (except janitorial and parking) and
             includes in-suite Telsco security system, monthly monitoring fee and air conditioning</li>
-          <li><strong>LEASE RATE:</strong> $22.00/Sq.Ft.</li>
+          <li><strong>LEASE RATE:</strong> $18.00 SF/yr (NNN)</li>
         </ul>
 
       </div>
@@ -168,7 +172,7 @@
           <div class="col-sm-4">
             <div class="portfolio">
               <a href="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549560122/1-large.jpg" data-toggle="lightbox">
-                <img src="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549777714/1.jpg" class="img-fluid" alt="indoor door" /></a>
+                <img src="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,fl_awebp,q_auto/v1549777714/1.jpg" class="img-fluid" alt="indoor door" /></a>
             </div>
           </div>
 
@@ -210,7 +214,7 @@
 
         </div>
         <div id="photosby">
-          <p>Amazing photos by <a href="http://rebeccalippiatt.com/edmonton_photographer_new_news_photos" target="_blank">Rebecca
+          <p>Amazing photos by <a href="http://rebeccalippiatt.com/edmonton_photographer_new_news_photos" target="_blank" rel="noreferrer">Rebecca
               Lippiatt</a>.<br>
             Head over to her website for additional images and a wonderful blog post.</p>
         </div>
@@ -218,8 +222,7 @@
         <div id="paraAlquiler">
           <div class="col-12">
             <p class="lead">Want to learn more?</p>
-            <a href="http://lizotterealestate.com/property/art-deco-office-spaces-11051-97-street-edmonton-ab/" class="btn btn-secondary md"
-              target="_blank">Leasing Inquiries</a>
+            <a href="#contact" class="btn btn-secondary md">Leasing Inquiries</a>
           </div>
         </div>
       </div>
@@ -238,12 +241,14 @@
           <div class="col-md-1"></div>
           <div class="col-md-10">
             <div class="card text-center">
-              <img src="https://res.cloudinary.com/dsu4vqygh/image/upload/c_scale,f_auto,q_auto,w_500/v1549562710/place-large.jpg" alt="A sign that reads This Must Be The Place" class="responsive">
-              
+              <picture>
+                <source media="(768px)" srcset="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549562710/place-large.jpg" sizes="(max-width: px) 100vw, 50vw">
+                <img src="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549992362/place.jpg" alt="A sign that reads This Must Be The Place" class="responsive">
+              </picture>
 
               <div class="card-body">
                 <div id="pexels">
-                  <p>Photo by <a href="https://www.pexels.com/@timmossholder" target="_blank">Tim Mossholder</a>.</p>
+                  <p>Photo by <a href="https://www.pexels.com/@timmossholder" target="_blank" rel="noreferrer">Tim Mossholder</a>.</p>
                 </div>
                 <h4>At The Core of Edmonton</h4>
                 <p>
@@ -280,7 +285,20 @@
     <!--end location section-->
 
     <!--Map section-->
-    <div id="map"></div>
+    <div class="row padding" id="googleMap">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+         <div class="card text-center">
+        <picture>
+            <a href="https://www.google.com/maps/place/11051+97+St+NW,+Edmonton,+AB+T5H+2N2/@53.5586727,-113.4937445,17z/data=!3m1!4b1!4m5!3m4!1s0x53a023ac68edf363:0x9767bcafdae1cd36!8m2!3d53.5586695!4d-113.4915558"
+             target="_blank" rel="noreferrer">
+          <img src="https://res.cloudinary.com/dsu4vqygh/image/upload/v1555102921/decoMap.png"
+           alt="Google Map place" class="responsive">
+        </picture>
+      </div>
+      </div>
+    </div>
+          
     <!--end map section-->
 
     <!--contact section-->
@@ -289,16 +307,14 @@
         <div class="row justify-content-center">
           <div class="col-md-5 text-center">
             <h3 class="heading">For leasing inquiries:</h3>
-            <a href="http://lizotterealestate.com/property/art-deco-office-spaces-11051-97-street-edmonton-ab/">
-              <img src="img/lizotte-logo.svg" alt="Leasing Agent's logo" />
+            <a href="https://www.avisonyoung.ca/en_CA/web/edmonton/properties?propertyId=465434-lease" target="_blank" rel="noreferrer">
+              <img src="https://www.avisonyoung.ca/ay-theme/resources/images/AVYLogo.svg" alt="Leasing Agent's logo" />
             </a>
-            <p>Contact Lizotte & Associates</p>
-            <p>Phone: <a href="tel:+1-780-488-0888">1.780.488.0888</a></p>
-            <p>Email: info@lizotterealestate.com</p>
+            <p>Contact Avison Young (Canada) Inc.</p>
+            <p>Phone: <a href="tel:+1-780-428-7850">1.780.428.7850</a></p>
+            <p>Email: <a href="hillary.smith@avisonyoung.com">hillary.smith@avisonyoung.com</a></p>
             <p>
-              Additional information: <strong><i>Deco</i>licious</strong> at <a href="http://lizotterealestate.com/property/art-deco-office-spaces-11051-97-street-edmonton-ab/">Lizotte
-                &
-                Associates</a>
+              Additional information: <strong><i>Deco</i>licious</strong> at <a href="https://www.avisonyoung.ca/en_CA/web/edmonton/properties?propertyId=465434-lease" target="_blank" rel="noreferrer">Avison Young (Canada) Inc.</a>
             </p>
           </div>
 
@@ -329,31 +345,7 @@
     </script>
     <!-- end of Lightbox JS -->
 
-    <script>
-      // Initialize and add the map
-      function initMap() {
-        // The location of Decolicious
-        var decolicious = { lat: 53.5586695, lng: -113.49155580000001 };
-        // The map, centered at Decolicious
-        var map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 15,
-          center: decolicious
-        });
-        // The marker, positioned at Decolicious
-        var marker = new google.maps.Marker({
-          position: decolicious,
-          map: map
-        });
-        var infoWindow = new google.maps.InfoWindow({
-          content: '<h4><a href="https://www.google.com/maps/dir//11051+97+St+NW,+Edmonton,+AB+T5H+2N2/@53.5513534,-113.5203122,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x53a023ac68edf363:0x9767bcafdae1cd36!2m2!1d-113.4915558!2d53.5586695" target="_blank">Directions</a></h4>'
-        });
-        marker.addListener('click', function () {
-          infoWindow.open(map, marker);
-        });
-      }
-    </script>
-
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnTooLE82Rs1ubTqByAhIB9QhU87-krqU&callback=initMap"></script>
+    
 </body>
 
 </html>

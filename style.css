@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+/*@import url("https://fonts.googleapis.com/css?family=Lato:400,700");*/
 @import url("https://fonts.googleapis.com/css?family=Poiret+One");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700");
 
 body {
   overflow-x: hidden;
-  /* font-family: "Lato", sans-serif; */
+  /*font-family: "Lato", sans-serif; */
   font-family: "Helvetica", sans-serif;
   color: #505962;
 }
@@ -15,16 +15,15 @@ body {
   content: "";
   display: block;
 }
-
-/*logo {
+/*
+logo {
   font-family: "Poiret One", cursive;
   text-shadow: 4px 4px 4px #aaa;
   color: #d4af37;
-} */
-
+}
+*/
 #logo {
   font-family: "Josefin Sans", sans-serif;
-  /*text-shadow: 4px 4px 4px #aaa; */
   color: #d4af37;
   text-transform: capitalize;
   font-size: 1.5rem;
@@ -59,7 +58,7 @@ body {
 
 .top-hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://res.cloudinary.com/dsu4vqygh/image/upload/c_scale,f_auto,q_auto,w_900/v1549560121/slide-1-large.jpg");
+    url("https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549989851/slide_1.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -106,7 +105,7 @@ body {
   margin-bottom: 3.25rem;
 }
 .hero-image {
-  background-image: url("https://res.cloudinary.com/dsu4vqygh/image/upload/c_scale,f_auto,q_auto,w_900/v1549560121/lease-large.jpg");
+  background-image: url("https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549990247/lease1.jpg");
   background-color: #cccccc;
   height: 500px;
   background-position: center;
@@ -198,11 +197,17 @@ h3.heading {
   font-size: 0.6rem;
   margin-top: -1rem;
 }
-/* Set the size of the div element that contains the map */
-#map {
-  margin-top: 2rem;
-  height: 400px; /* The height is 400 pixels */
-  width: 100%; /* The width is the width of the web page */
+/* Set the size of the div element that contains the map   */
+
+.top-map {
+  height: 50vh;
+  min-height: 200px;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#googleMap {
+  padding-top: 1rem;
 }
 
 /*contact*/
@@ -293,27 +298,9 @@ main {
     min-height: 600px;
     margin-bottom: 2rem;
   }
-  .top-hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549560121/slide-1-large.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  .hero-image {
-    background-image: url("https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549560121/lease-large.jpg");
-    background-color: #cccccc;
-    height: 100vh;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .top-hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549560121/slide-1-large.jpg");
