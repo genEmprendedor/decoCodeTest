@@ -222,7 +222,8 @@
         <div id="paraAlquiler">
           <div class="col-12">
             <p class="lead">Want to learn more?</p>
-            <a href="#contact" class="btn btn-secondary md">Leasing Inquiries</a>
+            <a href="#contact" class="btn btn-secondary md"
+              >Leasing Inquiries</a>
           </div>
         </div>
       </div>
@@ -285,20 +286,7 @@
     <!--end location section-->
 
     <!--Map section-->
-    <div class="row padding" id="googleMap">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-         <div class="card text-center">
-        <picture>
-            <a href="https://www.google.com/maps/place/11051+97+St+NW,+Edmonton,+AB+T5H+2N2/@53.5586727,-113.4937445,17z/data=!3m1!4b1!4m5!3m4!1s0x53a023ac68edf363:0x9767bcafdae1cd36!8m2!3d53.5586695!4d-113.4915558"
-             target="_blank" rel="noreferrer">
-          <img src="https://res.cloudinary.com/dsu4vqygh/image/upload/v1555102921/decoMap.png"
-           alt="Google Map place" class="responsive">
-        </picture>
-      </div>
-      </div>
-    </div>
-          
+    <div id="map"></div>
     <!--end map section-->
 
     <!--contact section-->
@@ -307,14 +295,18 @@
         <div class="row justify-content-center">
           <div class="col-md-5 text-center">
             <h3 class="heading">For leasing inquiries:</h3>
-            <a href="https://www.avisonyoung.ca/en_CA/web/edmonton/properties?propertyId=465434-lease" target="_blank" rel="noreferrer">
-              <img src="https://www.avisonyoung.ca/ay-theme/resources/images/AVYLogo.svg" alt="Leasing Agent's logo" />
+            <a href="https://www.avisonyoung.ca/en_CA/web/edmonton/properties?propertyId=465434-lease"
+             target="_blank" rel="noreferrer">
+              <img src="https://www.avisonyoung.ca/ay-theme/resources/images/AVYLogo.svg"
+               alt="Leasing Agent's logo" />
             </a>
             <p>Contact Avison Young (Canada) Inc.</p>
-            <p>Phone: <a href="tel:+1-780-428-7850">1.780.428.7850</a></p>
+            <p>Phone: <a href="tel:+ 1-780-428-7850">1.780.428.7850</a></p>
             <p>Email: <a href="hillary.smith@avisonyoung.com">hillary.smith@avisonyoung.com</a></p>
             <p>
-              Additional information: <strong><i>Deco</i>licious</strong> at <a href="https://www.avisonyoung.ca/en_CA/web/edmonton/properties?propertyId=465434-lease" target="_blank" rel="noreferrer">Avison Young (Canada) Inc.</a>
+              Additional information: <strong><i>Deco</i>licious</strong> at
+               <a href="https://www.avisonyoung.ca/en_CA/web/edmonton/properties?propertyId=465434-lease" target="_blank" rel="noreferrer">
+                  Avison Young (Canada) Inc.</a>
             </p>
           </div>
 
@@ -345,7 +337,31 @@
     </script>
     <!-- end of Lightbox JS -->
 
-    
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Decolicious
+        var decolicious = { lat: 53.5586695, lng: -113.49155580000001 };
+        // The map, centered at Decolicious
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: decolicious
+        });
+        // The marker, positioned at Decolicious
+        var marker = new google.maps.Marker({
+          position: decolicious,
+          map: map
+        });
+        var infoWindow = new google.maps.InfoWindow({
+          content: '<h4><a href="https://www.google.com/maps/dir//11051+97+St+NW,+Edmonton,+AB+T5H+2N2/@53.5513534,-113.5203122,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x53a023ac68edf363:0x9767bcafdae1cd36!2m2!1d-113.4915558!2d53.5586695" target="_blank">Directions</a></h4>'
+        });
+        marker.addListener('click', function () {
+          infoWindow.open(map, marker);
+        });
+      }
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnTooLE82Rs1ubTqByAhIB9QhU87-krqU&callback=initMap"></script>
 </body>
 
 </html>
