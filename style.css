@@ -103,6 +103,8 @@ logo {
 /*Leasing*/
 #lease {
   margin-bottom: 3.25rem;
+  max-width: 960px;
+  margin: 30px auto;
 }
 .hero-image {
   background-image: url("https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549990247/lease1.jpg");
