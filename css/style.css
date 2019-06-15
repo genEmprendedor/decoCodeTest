@@ -347,7 +347,7 @@ h3 {
 #portfolio .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 1em;
+  grid-gap: 0.75rem;
 }
 
 /* hover styles */
@@ -413,7 +413,7 @@ h3 {
 
 .paraAlquiler {
   margin-top: 1rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2.5rem;
 }
 .paraAlquiler p {
   margin-bottom: 1rem;
@@ -422,6 +422,11 @@ h3 {
 .lease-btn {
   color: var(--primary-color);
   background: white;
+}
+
+.lease-btn:hover {
+  background: var(--primary-color);
+  color: white;
 }
 
 /* Location */
@@ -499,7 +504,7 @@ hr.socket {
 #contact h3 {
   text-align: center;
   padding-top: 1.5rem;
-
+  text-transform: uppercase;
   font-size: 1.25rem;
 }
 
