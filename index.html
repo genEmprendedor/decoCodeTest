@@ -1,367 +1,490 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-132542390-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-132542390-1");
+    </script>
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132542390-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-132542390-1');
-  </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
 
-  <link rel="stylesheet" href="style.css" />
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/widescreen.css" />
+    <link rel="stylesheet" href="css/bigscreen.css" />
 
-  <!--Font Awsome-->
-  <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
-    crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:549px)"
+      href="css/style.css"
+    />
 
-  <!-- Lightbox CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-    crossorigin="anonymous" />
-  <!-- end lightbox -->
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:550px)"
+      href="css/widescreen.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:1080px)"
+      href="css/bigscreen.css"
+    />
 
-  <title>Decolicious – Edmonton Office Space for Lease</title>
-  <link rel="icon" type="image/ico" href="favicon.ico" />
-  <link rel="canonical" href="https://decolicious.ca" />
+    <title>Decolicious | Edmonton Office Space for Lease</title>
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <link rel="canonical" href="https://decolicious.ca" />
 
-  <meta name="description" content="At almost 3,000 Sq.Ft of lease space, Decolicious is the largest modern Art Deco building minutes away from the downtown core… part of what makes Decolicious the best office address in Edmonton.">
-  <meta name="keywords" content="Edmonton office lease, Art Deco office space, Edmonton Downtown office rent, Artistic Office space"> 
+    <meta
+      name="description"
+      content="Affordable office space downtown Edmonton."
+    />
+    <meta
+      name="keywords"
+      content="lease office space edmonton, lease commercial space edmonton, office space for lease downtown edmonton, office space rates edmonton, best downtown edmonton office"
+    />
+  </head>
 
-</head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a href="" class="logo">Decolicious</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li><a href="#lease">Lease</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
 
-<body data-spy="scroll" data-target="#navbarResponsive">
-  <!--home section-->
-  <div class="home">
-    <!--navigation-->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a href="index.html" class="navbar-brand" id="logo">Decolicious</a>
-      <button aria-label="Logo of Decolicious" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!--nav items-->
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="#lease" class="nav-link">Lease</a>
-          </li>
-          <li class="nav-item">
-            <a href="#portfolio" class="nav-link">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a href="#location" class="nav-link">Location</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <!--end nav items-->
-    </nav>
-
-    <!--Main Hero-->
-    <div class="top-hero">
-      <div class="top-hero-image">
-        <div class="top-hero-text">
-          <h1>Welcome to Decolicious</h1>
-          <h3>Your work. Your Future. In Style.</h3>
-          <a href="#contact" class="btn btn-outline-light btn-lg">LEASING INQUIRIES</a>
+    <!--Showcase-->
+    <section id="showcase">
+      <div class="container showcase-container">
+        <div class="showcase-image">
+          <div class="hero-text">
+            <h1>Welcome to Decolicious</h1>
+            <h3>Your work. Your Future. In Style.</h3>
+            <a href="#contact" class="btn btn-showcase">LEASING INQUIRIES</a>
+          </div>
         </div>
       </div>
-    </div>
-    <!--end Main Hero-->
+    </section>
+    <!--Showcase-->
 
     <!--leasing section-->
-    <section class="offset" id="lease">
-      <div class="container">
+    <section id="lease">
+      <div class="container lease-container">
         <div class="heading-underline"></div>
-        <h3 class="text-center heading" id="titulo">TURN-KEY OFFICE SPACES</h1>
-          <h4 class="text-center" id="subheader">FULLY RENOVATED WITH ART DECO CHARM
-        </h3>
-        <p>
-          Located at 11051-97 Street in Edmonton, minutes away from the downtown core. Classic, fully restored Art Deco
-          building
-          with brand new HVAC, electrical, plumbing, windows and fixtures. Second floor includes ROOFTOP PATIO with
-          views of the downtown skyline.
-        </p>
-        <p>
-          Constructed in 1948, this building features a stucco exterior, as well as wood and steel frame construction,
-          and attractive new landscaping. True to Art Deco tradition, interiors feature rounded corners and an
-          abundance of glass blocks. But this iconic building is only part of what makes <i>Deco</i>licious the best
-          office address in Edmonton.
-        </p>
-        <p>
-          With a growing community of entrepreneurs, researchers, makers and technology innovators, Edmonton is
-          bustling with commerce and creativity. <i>Deco</i>licious offers light-filled spaces, with attractive floor
-          plans that lend themselves to the dynamic, collaborative spaces of modern work. Art Deco windows, with prime
-          views
-          of a city bustling with commerce and creativity, surround your team with inspiration and purpose. This one of
-          a kind boutique space is perfect for small and medium size firms who want to stand out in a crowd. This
-          uniquely attractive and stylish commercial space is a rare gem in downtown Edmonton.
-        </p>
-        <p>Location is critical for both the tenants and their clients. <i>Deco</i>licious is located at a
-          fantastically convenient intersection that is easy to get to using any mode of transportation. It is a 15
-          minute walk to City Hall, and transit is right outside the door. LRT is a ten minute walk and there is easy
-          to access bike trails. With onsite parking, access downtown Edmonton without the additional cost.
-        </p>
-        <p>Located at the intersection of Norwood Blvd and 97 St, <i>Deco</i>licious comes with incredible signage
-          opportunities to the east, west, north and south. For an organization wanting to create a presence, this
-          ability to generate unique signage will help cement and promote their brand.</p>
+        <h2 class="titulo">TURN-KEY OFFICE SPACES</h2>
+        <h3 class="sub-titulo">FULLY RENOVATED WITH ART DECO CHARM</h3>
 
+        <p>
+          Located at 11051-97 Street in Edmonton, minutes away from the downtown
+          core. Classic, fully restored Art Deco building with brand new HVAC,
+          electrical, plumbing, windows and fixtures. Second floor includes
+          ROOFTOP PATIO with views of the downtown skyline.
+        </p>
+        <p>
+          Constructed in 1948, this building features a stucco exterior, as well
+          as wood and steel frame construction, and attractive new landscaping.
+          True to Art Deco tradition, interiors feature rounded corners and an
+          abundance of glass blocks. But this iconic building is only part of
+          what makes <i>Deco</i>licious the best office address in Edmonton.
+        </p>
+        <p>
+          With a growing community of entrepreneurs, researchers, makers and
+          technology innovators, Edmonton is bustling with commerce and
+          creativity. <i>Decolicious</i> offers light-filled spaces, with
+          attractive floor plans that lend themselves to the dynamic,
+          collaborative spaces of modern work. Art Deco windows, with prime
+          views of a city bustling with commerce and creativity, surround your
+          team with inspiration and purpose. This one of a kind boutique space
+          is perfect for small and medium size firms who want to stand out in a
+          crowd. This uniquely attractive and stylish commercial space is a rare
+          gem in downtown Edmonton.
+        </p>
+        <p>
+          Location is critical for both the tenants and their clients.
+          <i>Deco</i>licious is located at a fantastically convenient
+          intersection that is easy to get to using any mode of transportation.
+          It is a 15 minute walk to City Hall, and transit is right outside the
+          door. LRT is a ten minute walk and there is easy to access bike
+          trails. With onsite parking, access downtown Edmonton without the
+          additional cost.
+        </p>
+        <p>
+          Located at the intersection of Norwood Blvd and 97 St,
+          <i>Deco</i>licious comes with incredible signage opportunities to the
+          east, west, north and south. For an organization wanting to create a
+          presence, this ability to generate unique signage will help cement and
+          promote their brand.
+        </p>
       </div>
-      <div class="hero-image">
-        <div class="hero-text">
-          <h5>All Tenants enjoy their own <br> kitchenette with dishwasher and fridge</h5>
+
+      <div id="hero-image" class="container hero-container">
+        <div>
+          <h4>
+            All Tenants enjoy their own <br />
+            kitchenette with dishwasher and fridge
+          </h4>
         </div>
       </div>
 
-      <div class="leaseInfo">
-        <h4 class="leaseSubtitulo">Property Highlights</h4>
-        <ul>
-          <li>1,572 Sq.Ft (+/-) – main floor</li>
-          <li>1,425 Sq.Ft (+/-) – second floor</li>
-          <li>Corner of 111 Avenue and 97 Street</li>
-          <li>Direct access to public transportation including Metro LRT line</li>
-          <li>Ideal for it or graphic design group or other professional office use</li>
-          <li>Prime location for secondary medical businesses or services (non-cannabis)</li>
-          <li>Situated close to primary medical institutions (Royal Alexandra Hospital, Hys Centre, Capital Care
-            Norwood, And Glenrose Rehabilitation Hospital)</li>
+      <div class="leaseinfo container leaseinfo-container">
+        <h3 class="sub-titulo">Property Highlights</h3>
+        <ul class="fa-ul">
+          <li>
+            <span class="fa-li"><i class="fas fa-check-square"></i></span>1,572
+            Sq.Ft (+/-) – main floor
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-check-square"></i></span>1,425
+            Sq.Ft (+/-) – second floor
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-check-square"></i></span>Corner
+            of 111 Avenue and 97 Street
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-check-square"></i></span>Direct
+            access to public transportation including Metro LRT line
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-check-square"></i></span>Ideal
+            for it or graphic design group or other professional office use
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-check-square"></i></span>Prime
+            location for secondary medical businesses or services (non-cannabis)
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-check-square"></i></span
+            >Situated close to primary medical institutions (Royal Alexandra
+            Hospital, Hys Centre, Capital Care Norwood, And Glenrose
+            Rehabilitation Hospital)
+          </li>
         </ul>
-
       </div>
 
-      <div class="leaseInfo">
-        <h4 class="leaseSubtitulo" id="informacion">Property Information</h4>
-        <ul>
-          <li><strong>MUNICIPAL ADDRESS:</strong> 11051-97 Street, Edmonton, AB</li>
-          <li><strong>LEGAL ADDRESS:</strong> Plan RN83, Block 38, Lots 12, 13</li>
-          <li><strong>NEIGHBOURHOOD:</strong> McCauley</li>
-          <li><strong>LEASE SPACE:</strong> Main Floor: 1,572 Sq.Ft (+/-) Second Floor: 1,425 Sq.Ft (+/-)</li>
-          <li><strong>ZONING:</strong> CB1 (Low Intensity Business Zone)</li>
-          <li><strong>POSSESSION:</strong> Immediate</li>
-          <li><strong>PARKING:</strong> 4 covered stalls with plug-ins – $65/mo; 6 additional surface – $50/mo</li>
-          <li><strong>OP.COSTS:</strong> $5.25 (est. for 2018); ALL INCLUSIVE (except janitorial and parking) and
-            includes in-suite Telsco security system, monthly monitoring fee and air conditioning</li>
-          <li><strong>LEASE RATE:</strong> $18.00 SF/yr (NNN)</li>
+      <div class="leaseinfo container leaseinfo-container">
+        <h3 class="leaseSubtitulo">Property Information</h3>
+        <ul class="fa-ul">
+          <li>
+            <span class="fa-li"><i class="fas fa-check-square"></i></span
+            ><strong>MUNICIPAL ADDRESS:</strong> 11051-97 Street, Edmonton, AB
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-check-square"></i></span
+            ><strong>LEGAL ADDRESS:</strong> Plan RN83, Block 38, Lots 12, 13
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-check-square"></i></span
+            ><strong>NEIGHBOURHOOD:</strong> McCauley
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-check-square"></i></span
+            ><strong>LEASE SPACE:</strong> Main Floor: 1,572 Sq.Ft (+/-) Second
+            Floor: 1,425 Sq.Ft (+/-)
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-check-square"></i></span
+            ><strong>ZONING:</strong> CB1 (Low Intensity Business Zone)
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-check-square"></i></span
+            ><strong>POSSESSION:</strong> Immediate
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-check-square"></i></span
+            ><strong>PARKING:</strong> 4 covered stalls with plug-ins – $65/mo;
+            6 additional surface – $50/mo
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-check-square"></i></span
+            ><strong>OP.COSTS:</strong> $5.25 (est. for 2018); ALL INCLUSIVE
+            (except janitorial and parking) and includes in-suite Telsco
+            security system, monthly monitoring fee and air conditioning
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-check-square"></i></span
+            ><strong>LEASE RATE:</strong> $18.00 SF/yr (NNN)
+          </li>
         </ul>
-
       </div>
     </section>
     <!--end leasing section-->
 
     <!--portfolio section-->
-    <section id="portfolio" class="offset">
-      <div class="container-fluid" id="jumbotron">
-        <div class="col-12 text-center">
-          <h3 class="heading" id="portafolio">Portfolio</h3>
-          <div class="heading-underline"></div>
+    <section id="portfolio">
+      <div class="container portfolio-container">
+        <h2>Portfolio</h2>
+        <div class="heading-underline"></div>
+        <!-- Image gallery -->
+        <div class="child-page-listing">
+          <div class="grid-container">
+            <article id="3685" class="location-listing">
+              <a class="location-title" href="#"> Magnificent details </a>
+
+              <div class="location-image">
+                <a href="#">
+                  <img
+                    width="300"
+                    height="169"
+                    src="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549560122/1-large.jpg"
+                    alt="indoor door"
+                  />
+                </a>
+              </div>
+            </article>
+
+            <article id="3688" class="location-listing">
+              <a class="location-title" href="#"> Bold Colors </a>
+
+              <div class="location-image">
+                <a href="#">
+                  <img
+                    width="300"
+                    height="169"
+                    src="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549560122/2-large.jpg"
+                    alt="indoor door in corner"
+                  />
+                </a>
+              </div>
+            </article>
+
+            <article id="3691" class="location-listing">
+              <a class="location-title" href="#"> Outdoor Patio </a>
+
+              <div class="location-image">
+                <a href="#">
+                  <img
+                    width="300"
+                    height="169"
+                    src="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549560122/3-large.jpg"
+                    alt="outdoor patio"
+                  />
+                </a>
+              </div>
+            </article>
+
+            <article id="3694" class="location-listing">
+              <a class="location-title" href="#"> Visual Drama </a>
+
+              <div class="location-image">
+                <a href="#">
+                  <img
+                    width="300"
+                    height="169"
+                    src="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549560123/4-large.jpg"
+                    alt="indoor room with fireplace"
+                  />
+                </a>
+              </div>
+            </article>
+
+            <article id="3697" class="location-listing">
+              <a class="location-title" href="#"> Art Deco facade </a>
+
+              <div class="location-image">
+                <a href="#">
+                  <img
+                    width="300"
+                    height="169"
+                    src="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549560123/5-large.jpg"
+                    alt="building Art Deco facade"
+                  />
+                </a>
+              </div>
+            </article>
+
+            <article id="3700" class="location-listing">
+              <a class="location-title" href="#"> Geometric Shapes </a>
+
+              <div class="location-image">
+                <a href="#">
+                  <img
+                    width="300"
+                    height="169"
+                    src="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549560123/6-large.jpg"
+                    alt="indoor second floor view"
+                  />
+                </a>
+              </div>
+            </article>
+          </div>
+          <!-- end grid container -->
+        </div>
+        <!-- enf of image gallery -->
+
+        <div class="photosby container">
+          <p>
+            Amazing photos by
+            <a
+              href="http://rebeccalippiatt.com/edmonton_photographer_new_news_photos"
+              target="_blank"
+              rel="noreferrer"
+              >Rebecca Lippiatt</a
+            >.
+          </p>
+          <p>
+            Head over to her website for additional images and a wonderful blog
+            post.
+          </p>
         </div>
 
-        <div class="row no-padding">
-          <div class="col-sm-4">
-            <div class="portfolio">
-              <a href="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549560122/1-large.jpg" data-toggle="lightbox">
-                <img src="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,fl_awebp,q_auto/v1549777714/1.jpg" class="img-fluid" alt="indoor door" /></a>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="portfolio">
-              <a href="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549560122/2-large.jpg" data-toggle="lightbox">
-                <img src="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549777714/2.jpg" class="img-fluid" alt="indoor door in corner" /></a>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="portfolio">
-              <a href="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549560122/3-large.jpg" data-toggle="lightbox">
-                <img src="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549777714/3.jpg" class="img-fluid" alt="view from rooftop patio" /></a>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="portfolio">
-              <a href="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549560123/4-large.jpg" data-toggle="lightbox">
-                <img src="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549777714/4.jpg" class="img-fluid" alt="indoor door" /></a>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="portfolio">
-              <a href="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549560123/5-large.jpg" data-toggle="lightbox">
-                <img src="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549777714/5.jpg" class="img-fluid" alt="outdoor front view" /></a>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="portfolio">
-              <a href="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549560123/6-large.jpg" data-toggle="lightbox">
-                <img src="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549777714/6.jpg" class="img-fluid" alt="indoor second floor view" /></a>
-            </div>
-          </div>
-
-
-        </div>
-        <div id="photosby">
-          <p>Amazing photos by <a href="http://rebeccalippiatt.com/edmonton_photographer_new_news_photos" target="_blank" rel="noreferrer">Rebecca
-              Lippiatt</a>.<br>
-            Head over to her website for additional images and a wonderful blog post.</p>
-        </div>
-
-        <div id="paraAlquiler">
+        <div class="paraAlquiler container">
           <div class="col-12">
             <p class="lead">Want to learn more?</p>
-            <a href="#contact" class="btn btn-secondary md"
-              >Leasing Inquiries</a>
+            <a href="#contact" class="btn lease-btn">Leasing Inquiries</a>
           </div>
         </div>
       </div>
-
     </section>
     <!--end portfolio section-->
 
     <!--location section-->
-    <section id="location" class="offset">
-      <div>
-        <div class="col-12 text-center">
-          <h3 class="heading" id="locacion">Location</h3>
-          <div class="heading-underline"></div>
-        </div>
-        <div class="row padding">
-          <div class="col-md-1"></div>
-          <div class="col-md-10">
-            <div class="card text-center">
-              <picture>
-                <source media="(768px)" srcset="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549562710/place-large.jpg" sizes="(max-width: px) 100vw, 50vw">
-                <img src="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549992362/place.jpg" alt="A sign that reads This Must Be The Place" class="responsive">
-              </picture>
+    <section id="location">
+      <h2 class="container">Location</h2>
 
-              <div class="card-body">
-                <div id="pexels">
-                  <p>Photo by <a href="https://www.pexels.com/@timmossholder" target="_blank" rel="noreferrer">Tim Mossholder</a>.</p>
-                </div>
-                <h4>At The Core of Edmonton</h4>
-                <p>
-                  Immerse yourself in the remarkable intersection of life and work in downtown Edmonton. The
-                  neighbourhood of McCauley is growing in residential, retail and office space. Buildings are landmarks
-                  of old and new ventures, a melting pot for retail and commerce. Edmonton's best-loved business, art
-                  galleries, museums, luxury hotels, and fusion cuisine are all claiming a stake in redefining
-                  Edmonton's downtown.
-                  All readily available for tenants of <i>Deco</i>licious.
-                </p>
-                <p>
-                  McCauley is a vibrant and ethnically diverse inner city neighbourhood in Edmonton, and rated as one
-                  of the most walkable in the city. Chinatown and Little Italy are within a few blocks. Both are unique
-                  and distinct retail shopping areas representing over 250 shops and services. The beautiful Red Gates
-                  signify the entrance to Edmonton’s Chinatown, a vibrant shopping and dining destination brimming with
-                  Asian culture and flair, while Little Italy offers a plethora of restaurants and shops featuring
-                  Italian foods and merchandise, as well as the green oasis of Giovanni Caboto Park.
-                </p>
-                <p>This iconic neighbourhood is famous for its collection of religious assemblies. In particular, 96
-                  Street is also known as "Church Street," with numerous turn of the century buildings celebrating
-                  faiths from around the world. Churches and other historical buildings have been given second lives as
-                  architectural studios, boutique offices, shops and event spaces. <i>Deco</i>licious is part of this
-                  transformation, and is one of the eight official City of Edmonton sites designated as Municipal
-                  Historic Resources in the McCauley neighbourhood. In addition to the historic buildings, new and
-                  upgraded structures are popping up as part of the renewal of the area.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-1"></div>
+      <div class="heading-underline container"></div>
+
+      <div class="container theplace-container">
+        <picture>
+          <source
+            media="(768px)"
+            srcset="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549562710/place-large.jpg"
+            sizes="(max-width: px) 100vw, 50vw"
+          />
+          <img
+            src="https://res.cloudinary.com/dsu4vqygh/image/upload/f_auto,q_auto/v1549992362/place.jpg"
+            alt="A sign that reads This Must Be The Place"
+            class="responsive"
+          />
+        </picture>
+
+        <div>
+          <h3>At The Core of Edmonton</h3>
+          <p>
+            Immerse yourself in the remarkable intersection of life and work in
+            downtown Edmonton. The neighbourhood of McCauley is growing in
+            residential, retail and office space. Buildings are landmarks of old
+            and new ventures, a melting pot for retail and commerce. Edmonton's
+            best-loved business, art galleries, museums, luxury hotels, and
+            fusion cuisine are all claiming a stake in redefining Edmonton's
+            downtown. All readily available for tenants of <i>Deco</i>licious.
+          </p>
+          <p>
+            McCauley is a vibrant and ethnically diverse inner city
+            neighbourhood in Edmonton, and rated as one of the most walkable in
+            the city. Chinatown and Little Italy are within a few blocks. Both
+            are unique and distinct retail shopping areas representing over 250
+            shops and services. The beautiful Red Gates signify the entrance to
+            Edmonton’s Chinatown, a vibrant shopping and dining destination
+            brimming with Asian culture and flair, while Little Italy offers a
+            plethora of restaurants and shops featuring Italian foods and
+            merchandise, as well as the green oasis of Giovanni Caboto Park.
+          </p>
+          <p>
+            This iconic neighbourhood is famous for its collection of religious
+            assemblies. In particular, 96 Street is also known as "Church
+            Street," with numerous turn of the century buildings celebrating
+            faiths from around the world. Churches and other historical
+            buildings have been given second lives as architectural studios,
+            boutique offices, shops and event spaces. <i>Deco</i>licious is part
+            of this transformation, and is one of the eight official City of
+            Edmonton sites designated as Municipal Historic Resources in the
+            McCauley neighbourhood. In addition to the historic buildings, new
+            and upgraded structures are popping up as part of the renewal of the
+            area.
+          </p>
         </div>
       </div>
     </section>
     <!--end location section-->
 
     <!--Map section-->
-    <div id="map"></div>
+    <section id="map">
+      <div class="container map-container">
+        <picture class="background-map">
+          <a
+            href="https://www.google.com/maps/dir//11051+97+St+NW,+Edmonton,+AB+T5H+2N2/@53.5513534,-113.5203122,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x53a023ac68edf363:0x9767bcafdae1cd36!2m2!1d-113.4915558!2d53.5586695"
+          ></a>
+        </picture>
+      </div>
+    </section>
     <!--end map section-->
 
     <!--contact section-->
-    <section id="contact" class="offset">
+    <section id="contact">
       <footer>
-        <div class="row justify-content-center">
-          <div class="col-md-5 text-center">
+        <div class="container footer-container">
+          <div>
             <h3 class="heading">For leasing inquiries:</h3>
-            <a href="https://www.avisonyoung.ca/en_CA/web/edmonton/properties?propertyId=465434-lease"
-             target="_blank" rel="noreferrer">
-              <img src="https://www.avisonyoung.ca/ay-theme/resources/images/AVYLogo.svg"
-               alt="Leasing Agent's logo" />
+            <a
+              href="https://www.avisonyoung.ca/en_CA/web/edmonton/properties?propertyId=465434-lease"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://www.avisonyoung.ca/ay-theme/resources/images/AVYLogo.svg"
+                alt="Leasing Agent's logo"
+              />
             </a>
             <p>Contact Avison Young (Canada) Inc.</p>
             <p>Phone: <a href="tel:+ 1-780-428-7850">1.780.428.7850</a></p>
-            <p>Email: <a href="hillary.smith@avisonyoung.com">hillary.smith@avisonyoung.com</a></p>
+            <p>
+              Email:
+              <a href="hillary.smith@avisonyoung.com"
+                >hillary.smith@avisonyoung.com</a
+              >
+            </p>
             <p>
               Additional information: <strong><i>Deco</i>licious</strong> at
-               <a href="https://www.avisonyoung.ca/en_CA/web/edmonton/properties?propertyId=465434-lease" target="_blank" rel="noreferrer">
-                  Avison Young (Canada) Inc.</a>
+              <a
+                href="https://www.avisonyoung.ca/en_CA/web/edmonton/properties?propertyId=465434-lease"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Avison Young (Canada) Inc.</a
+              >
             </p>
           </div>
 
           <hr class="socket" />
-          2019 &copy; <i>Deco</i>licious
+          <p>2019 &copy; <i>Decolicious</i></p>
+          <address>
+            <a
+              href="https://www.google.com/maps/dir//11051+97+St+NW,+Edmonton,+AB+T5H+2N2/@53.5513534,-113.5203122,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x53a023ac68edf363:0x9767bcafdae1cd36!2m2!1d-113.4915558!2d53.5586695"
+              >11051 97 St NW, Edmonton, AB</a
+            >
+          </address>
+
+          <h6 class="madeby">
+            Made with <i class="fas fa-hear"> by <a href="#">Niqe Web</a></i>
+          </h6>
         </div>
       </footer>
     </section>
     <!--end contact section-->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-      crossorigin="anonymous"></script>
-
-    <!-- BS Lightbox JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" crossorigin="anonymous"></script>
-
-    <script>
-      $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-      });
-    </script>
-    <!-- end of Lightbox JS -->
-
-    <script>
-      // Initialize and add the map
-      function initMap() {
-        // The location of Decolicious
-        var decolicious = { lat: 53.5586695, lng: -113.49155580000001 };
-        // The map, centered at Decolicious
-        var map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 15,
-          center: decolicious
-        });
-        // The marker, positioned at Decolicious
-        var marker = new google.maps.Marker({
-          position: decolicious,
-          map: map
-        });
-        var infoWindow = new google.maps.InfoWindow({
-          content: '<h4><a href="https://www.google.com/maps/dir//11051+97+St+NW,+Edmonton,+AB+T5H+2N2/@53.5513534,-113.5203122,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x53a023ac68edf363:0x9767bcafdae1cd36!2m2!1d-113.4915558!2d53.5586695" target="_blank">Directions</a></h4>'
-        });
-        marker.addListener('click', function () {
-          infoWindow.open(map, marker);
-        });
-      }
-    </script>
-
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnTooLE82Rs1ubTqByAhIB9QhU87-krqU&callback=initMap"></script>
-</body>
-
+  </body>
 </html>
