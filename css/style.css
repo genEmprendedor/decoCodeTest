@@ -398,13 +398,9 @@ h3 {
 /* Photos by */
 
 .photosby p {
-  font-size: 0.5rem;
+  font-size: 0.75rem;
   text-align: left;
-  margin-top: 0.25rem;
-}
-
-.photosby a {
-  color: white;
+  margin-top: 0.5rem;
 }
 
 .photosby a:hover {
@@ -528,11 +524,18 @@ hr.socket {
 
 .madeby {
   text-align: center;
-  font-size: 0.5rem;
+  font-size: 0.75rem;
   margin: 0.5rem;
 }
 .madeby i {
   color: red;
+}
+
+.madeby a:hover {
+  color: aquamarine;
+  background: gold;
+  padding: 0.25rem;
+  border-radius: 10%;
 }
 
 #contact .center {
