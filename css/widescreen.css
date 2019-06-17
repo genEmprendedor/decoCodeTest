@@ -27,7 +27,8 @@
 }
 
 #hero-image {
-  height: 100vh;
+  max-height: 100vh;
+  max-width: auto;
 }
 
 #lease .leaseinfo h3 {
@@ -90,4 +91,12 @@ footer h5 {
 }
 .madeby {
   margin-bottom: 1rem;
+}
+
+#lease h3 {
+  font-size: 2rem;
+}
+
+#lease .sub-titulo {
+  font-size: 1.25rem;
 }

@@ -264,6 +264,10 @@ h3 {
   padding-left: 1rem;
 }
 
+#lease .titulo {
+  font-size: 1.9rem;
+}
+
 #lease h3 {
   margin: 1rem;
 }
@@ -307,9 +311,14 @@ h3 {
   padding-left: 0;
 }
 
-#lease .leaseinfo-container h3 {
-  font-size: 5vw;
+#lease h3 {
+  font-size: 1.5rem;
   margin-top: 2rem;
+}
+
+#lease .sub-title {
+  font-size: 1rem;
+  margin-top: 0.5rem;
 }
 
 #lease .last {
