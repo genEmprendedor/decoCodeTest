@@ -1,0 +1,57 @@
+.container {
+  max-width: 1079px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
+}
+
+#showcase h1 {
+  font-size: 5rem;
+}
+
+#showcase h3 {
+  font-size: 2rem;
+}
+
+#lease .heading-underline {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#lease .sub-titulo {
+  font-size: 1.5rem;
+}
+
+#lease p {
+  margin-left: 1rem;
+}
+
+#hero-image {
+  height: 100vh;
+}
+
+#lease .leaseinfo h3 {
+  padding-left: 1rem;
+}
+
+#lease .leaseinfo li {
+  margin-left: 1rem;
+}
+
+#portfolio h2 {
+  font-size: 3rem;
+  padding-top: 1.5rem;
+}
+#portfolio .heading-underline {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+#portfolio img {
+  max-width: auto;
+  height: 50vh;
+}
+
+.photosby p {
+  margin-left: 0.5rem;
+}
