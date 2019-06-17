@@ -78,14 +78,6 @@
   font-size: 1.5rem;
 }
 
-#map img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  padding: 1rem;
-}
-
 footer h5 {
   margin-top: 1rem;
 }
@@ -99,4 +91,45 @@ footer h5 {
 
 #lease .sub-titulo {
   font-size: 1.25rem;
+}
+
+#map .decogrid {
+  display: flex;
+}
+#map .decofollow {
+  flex: 40%;
+}
+
+#map .decomap {
+  flex: 60%;
+}
+
+#map img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  /*padding: 0.25rem; */
+}
+
+.decofollow {
+  margin-top: 1rem;
+}
+
+.decofollow p {
+  margin-bottom: 1rem;
+}
+
+.decofollow ul {
+  list-style: none;
+  line-height: 2;
+}
+
+.decofollow a {
+  color: inherit;
+  font-size: inherit;
+}
+
+.decofollow i {
+  color: var(--primary-color);
 }
