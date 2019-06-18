@@ -470,9 +470,24 @@ h3 {
 }
 
 /* Map */
-.map {
+#map .decogrid {
+  display: flex;
+  flex-direction: column;
+}
+/*
+#map img {
+  display: block;
+  /*margin-left: auto;
+  margin-right: auto;
   width: 100%;
+}
+*/
+
+#map img {
   height: auto;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0;
 }
 
 /* Contact */
