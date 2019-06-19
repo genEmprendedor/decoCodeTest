@@ -256,6 +256,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /*justify-content: center; */
   text-align: center;
   height: 100%;
   background-color: var(--bg-light-color);
@@ -320,6 +321,14 @@ h3 {
 
 #lease .last {
   margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  #hero-image {
+    height: 70vh;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 
 /* Porfolio section */
@@ -407,6 +416,7 @@ h3 {
   font-size: 0.75rem;
   text-align: left;
   margin-top: 0.5rem;
+  margin-left: 1rem;
 }
 #portfolio .photosby a {
   text-decoration: underline;
@@ -446,6 +456,17 @@ h3 {
   width: 100%;
   height: auto;
 }
+
+@media (min-width: 768px) {
+  .theplace {
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  }
+}
+
 #location h2 {
   text-align: center;
   padding-top: 1.5rem;
@@ -471,21 +492,22 @@ h3 {
   display: flex;
   flex-direction: column;
 }
-/*
-#map img {
-  display: block;
-  /*margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-*/
 
 #map img {
   height: auto;
   width: 100%;
   padding: 1rem;
   
- 
+}
+
+@media (min-width: 768px) {
+  #map img {
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  }
 }
 
 /* Contact */
