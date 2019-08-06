@@ -516,8 +516,11 @@ footer {
   color: #ffffff;
 }
 footer img {
-  height: 9rem;
-  border-radius: 10%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 1%;
+  padding: 1rem;
+  margin: auto;
 }
 
 footer a {
@@ -553,9 +556,11 @@ hr.socket {
   font-size: 1.25rem;
 }
 
+/*
 #contact img {
   margin: 1rem;
 }
+*/
 
 #contact p {
   font-size: 1rem;
