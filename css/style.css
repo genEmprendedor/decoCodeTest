@@ -353,7 +353,7 @@ h3 {
 
 /* Gallery */
 #portfolio img {
-  width: 100%; 
+  width: 100%;
   height: auto;
 }
 #portfolio h2 {
@@ -459,7 +459,7 @@ h3 {
 
 @media (min-width: 768px) {
   .theplace {
-  
+
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -497,12 +497,12 @@ h3 {
   height: auto;
   width: 100%;
   padding: 1rem;
-  
+
 }
 
 @media (min-width: 768px) {
   #map img {
-  
+
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -516,7 +516,8 @@ footer {
   color: #ffffff;
 }
 footer img {
-  height: 3rem;
+  height: 9rem;
+  border-radius: 10%;
 }
 
 footer a {
@@ -581,7 +582,7 @@ hr.socket {
   text-align: center;
   font-size: 1rem;
   margin: .5rem;
-  
+
 }
 
 #contact .call {
